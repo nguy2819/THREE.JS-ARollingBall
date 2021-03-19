@@ -10,6 +10,10 @@ body
     height: 100vh;
     font-family: 'Poppins';
     background: rgb(24, 24, 24);
+    margin: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
 }
 
 body {
@@ -26,7 +30,10 @@ body {
 }
 
 .container {
-    height: 100vh;
+    position: absolute;
+    top: 33%;
+    left: 22%;
+    height: 38vh;
     display: grid;
     place-items: center;
 }
@@ -35,5 +42,40 @@ h1 {
     font-size: 8em;
     text-transform: uppercase;
     color: white;
-    z-index: 10;
 }
+
+text {
+    font-size: 4em;
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    fill: white;
+}
+
+.spinner {
+    width: 100px;
+    position: absolute;
+    background: none;
+    animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  button {
+    background: grey;
+    border: none;
+    outline: none;
+    padding: 2em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: .3em;
+    font-size: .9rem;
+    cursor: pointer;
+    border-radius: 25px;
+  }
