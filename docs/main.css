@@ -1,0 +1,88 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    height: 100vh;
+    font-family: 'Poppins';
+    background: rgb(24, 24, 24);
+    margin: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.webgl
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    mix-blend-mode: exclusion;
+    pointer-events: none;
+}
+
+.container {
+    position: absolute;
+    top: 33%;
+    left: 22%;
+    height: 38vh;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    font-size: 8em;
+    text-transform: uppercase;
+    color: white;
+}
+
+text {
+    font-size: 4em;
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    fill: white;
+}
+
+.spinner {
+    width: 100px;
+    position: absolute;
+    background: none;
+    animation: rotation 8s infinite linear;
+    pointer-events: none;
+    transition: top 0.5s, left 0.5s;
+    transition-timing-function: ease-out;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  button {
+    background: grey;
+    border: none;
+    outline: none;
+    padding: 2em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: .3em;
+    font-size: .9rem;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+
+
+/*# sourceMappingURL=main.css.map*/
