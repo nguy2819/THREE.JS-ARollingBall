@@ -27,6 +27,7 @@ body {
     left: 0;
     outline: none;
     mix-blend-mode: exclusion;
+    pointer-events: none;
 }
 
 .container {
@@ -56,6 +57,9 @@ text {
     position: absolute;
     background: none;
     animation: rotation 8s infinite linear;
+    pointer-events: none;
+    transition: top 0.5s, left 0.5s;
+    transition-timing-function: ease-out;
 }
 @keyframes rotation {
     from {
